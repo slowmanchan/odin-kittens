@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/home' => 'static_pages#home'
+
   root "kittens#index"
   resources :kittens
   # The priority is based upon order of creation: first created -> highest priority.
